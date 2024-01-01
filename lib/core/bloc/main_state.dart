@@ -1,10 +1,19 @@
 part of 'main_bloc.dart';
 
-sealed class MainState extends Equatable {
-  const MainState();
-  
+class MainState extends Equatable {
+  final bool isDarkTheme;
+  const MainState({this.isDarkTheme = false });
+
   @override
-  List<Object> get props => [];
+  List<Object> get props => [isDarkTheme];
+
+  MainState copyWith({bool? isDarkTheme}) {
+    return MainState(
+      isDarkTheme: isDarkTheme ?? this.isDarkTheme,
+    );
+  }
 }
 
-final class MainInitial extends MainState {}
+final class MainInitial extends MainState {
+
+}

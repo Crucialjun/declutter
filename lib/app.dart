@@ -12,12 +12,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => MainBloc(),
-      child: MaterialApp(
-            title: 'Flutter Demo',
-            debugShowCheckedModeBanner: false,
-            theme: AppTheme.themeData(Brightness.light),
-            darkTheme: AppTheme.themeData(Brightness.dark),
-            home: const HomeView()),
+      child: BlocBuilder<MainBloc, MainState>(
+        builder: (context, state) {
+          return MaterialApp(
+              title: 'Flutter Demo',
+              debugShowCheckedModeBanner: false,
+              theme: state.isDarkTheme
+                  ? AppTheme.themeData(Brightness.dark)
+                  : AppTheme.themeData(Brightness.light),
+              darkTheme: AppTheme.themeData(Brightness.dark),
+              home: const HomeView());
+        },
+      ),
     );
   }
 }

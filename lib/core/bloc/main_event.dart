@@ -16,6 +16,11 @@ class SetDarkTheme extends MainEvent {
   List<Object> get props => [isDarkTheme];
 }
 
+class GetDarkTheme extends MainEvent {
+  final bool isDarkTheme;
 
+  const GetDarkTheme(this.isDarkTheme);
 
-
+  @override
+  List<Object> get props => [isDarkTheme];
+}
