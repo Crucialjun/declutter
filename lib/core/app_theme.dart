@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   AppTheme._();
@@ -10,7 +11,7 @@ class AppTheme {
     ColorScheme colorScheme,
   ) =>
       ThemeData(
-          //fontFamily: GoogleFonts.nunitoSans().fontFamily,
+          fontFamily: GoogleFonts.nunitoSans().fontFamily,
           colorScheme: colorScheme,
           appBarTheme: AppBarTheme(
             backgroundColor: colorScheme.background,
