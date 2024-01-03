@@ -11,6 +11,10 @@ class HomeView extends StatelessWidget {
         body: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        const Text(
+          "Home View",
+          style: TextStyle(fontSize: 50, color: Colors.red),
+        ),
         BlocBuilder<MainBloc, MainState>(
           builder: (context, state) {
             return SwitchListTile(

@@ -1,6 +1,8 @@
+import 'package:declutter/core/app_theme.dart';
 import 'package:declutter/core/bloc/main_bloc.dart';
 import 'package:declutter/features/home/home_view.dart';
-import 'package:declutter/core/theme.dart';
+
+import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,14 +16,21 @@ class MyApp extends StatelessWidget {
       create: (context) => MainBloc(),
       child: BlocBuilder<MainBloc, MainState>(
         builder: (context, state) {
-          return MaterialApp(
-              title: 'Flutter Demo',
-              debugShowCheckedModeBanner: false,
-              theme: state.isDarkTheme
-                  ? AppTheme.themeData(Brightness.dark)
-                  : AppTheme.themeData(Brightness.light),
-              darkTheme: AppTheme.themeData(Brightness.dark),
-              home: const HomeView());
+          return DynamicColorBuilder(
+            builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
+              return MaterialApp(
+                  title: 'DeClutter',
+                  debugShowCheckedModeBanner: false,
+                  theme: state.isDarkTheme
+                      ? AppTheme.themeData(
+                          darkDynamic ?? const ColorScheme.dark())
+                      : AppTheme.themeData(
+                          lightDynamic ?? const ColorScheme.light()),
+                  darkTheme: AppTheme.themeData(
+                      darkDynamic ?? const ColorScheme.dark()),
+                  home: const HomeView());
+            },
+          );
         },
       ),
     );
