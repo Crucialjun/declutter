@@ -38,6 +38,16 @@ class AppTheme {
           ),
           useMaterial3: true,
           textTheme: const TextTheme(
-            titleMedium: TextStyle(fontSize: 18),
+            titleMedium: TextStyle(
+                fontSize: 18,
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.normal,
+                decoration: TextDecoration.none),
+            titleLarge: TextStyle(
+                fontSize: 20,
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.normal,
+                decoration: TextDecoration.none,
+                overflow: TextOverflow.ellipsis),
           ));
 }
