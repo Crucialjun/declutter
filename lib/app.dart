@@ -1,5 +1,6 @@
 import 'package:declutter/core/app_theme.dart';
 import 'package:declutter/core/bloc/main_bloc.dart';
+import 'package:declutter/features/bottom_nav_holder/bottom_nav_holder.dart';
 import 'package:declutter/features/home/home_view.dart';
 
 import 'package:dynamic_color/dynamic_color.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
                           lightDynamic ?? const ColorScheme.light()),
                   darkTheme: AppTheme.themeData(
                       darkDynamic ?? const ColorScheme.dark()),
-                  home: const HomeView());
+                  home: const BottomNavHolderView());
             },
           );
         },
