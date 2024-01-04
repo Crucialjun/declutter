@@ -38,7 +38,9 @@ class AppTheme {
           ),
           useMaterial3: true,
           textTheme: const TextTheme(
+            
             titleMedium: TextStyle(
+              
                 fontSize: 18,
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.normal,

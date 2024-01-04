@@ -6,6 +6,7 @@ import 'package:declutter/features/home/home_view.dart';
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,7 +20,14 @@ class MyApp extends StatelessWidget {
         builder: (context, state) {
           return DynamicColorBuilder(
             builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
-              return MaterialApp(
+              return ScreenUtilInit(
+                designSize: const Size(360, 690),
+                minTextAdapt: true,
+                splitScreenMode: true,
+
+                builder: (_,child){
+                  return
+              MaterialApp(
                   title: 'DeClutter',
                   debugShowCheckedModeBanner: false,
                   theme: state.isDarkTheme
@@ -30,6 +38,7 @@ class MyApp extends StatelessWidget {
                   darkTheme: AppTheme.themeData(
                       darkDynamic ?? const ColorScheme.dark()),
                   home: const BottomNavHolderView());
+                });
             },
           );
         },
