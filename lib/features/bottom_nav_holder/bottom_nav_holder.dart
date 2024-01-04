@@ -33,6 +33,9 @@ class _BottomNavHolderViewState extends State<BottomNavHolderView> {
           controller: pageController,
           children: pages),
       bottomNavigationBar: NavigationBar(
+        backgroundColor: Theme.of(context).colorScheme.background,
+        height: kBottomNavigationBarHeight,
+        elevation: 2,
         selectedIndex: selectedIndex,
         destinations: const [
           NavigationDestination(
