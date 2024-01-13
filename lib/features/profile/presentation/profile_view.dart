@@ -27,7 +27,23 @@ class ProfileView extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20.h,),
-            
+            Row(
+              children: [
+                Container(
+                  height: 60.r,
+                  width: 60.r,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Theme.of(context).colorScheme.surface,
+                    border: Border.all(
+                      color: Theme.of(context).colorScheme.background,
+                      
+                      width: 2,
+                    ),
+                  ),
+                )
+              ],
+            )
           ],
         ));
   }
