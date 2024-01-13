@@ -1,6 +1,7 @@
 import 'package:declutter/core/app_assets.dart';
 import 'package:declutter/utils/widgets/app_name_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
@@ -13,6 +14,7 @@ class ProfileView extends StatelessWidget {
           title: const AppNameText(),
         ),
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Visibility(
               visible: false,
@@ -24,6 +26,8 @@ class ProfileView extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 20.h,),
+            
           ],
         ));
   }
