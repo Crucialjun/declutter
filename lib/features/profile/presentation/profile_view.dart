@@ -18,6 +18,7 @@ class ProfileView extends StatelessWidget {
           title: const AppNameText(),
         ),
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Visibility(
               visible: false,
