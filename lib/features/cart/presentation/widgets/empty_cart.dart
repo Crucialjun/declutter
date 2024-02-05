@@ -19,9 +19,16 @@ class EmptyCartWidget extends StatelessWidget {
             AppAssets.emptyCart,
             height: 250.h,
           ),
-          Text('Whoops',
-              style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                  color: Theme.of(context).colorScheme.error, fontSize: 40.sp)),
+          SizedBox(height: 20.h),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Whoops',
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                      color: Theme.of(context).colorScheme.error,
+                      fontSize: 40.sp)),
+            ],
+          ),
           SizedBox(height: 20.h),
           Text('Your cart is empty',
               style: Theme.of(context).textTheme.titleMedium!.copyWith(

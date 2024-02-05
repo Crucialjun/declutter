@@ -46,6 +46,7 @@ dependencies:
   flutter_screenutil: ^5.9.0
   extended_image: ^8.2.0
   flutter_svg: ^2.0.9
+  fancy_shimmer_image: ^2.0.3
 
 dev_dependencies:
   flutter_test:
