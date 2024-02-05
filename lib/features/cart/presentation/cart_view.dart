@@ -1,5 +1,7 @@
 import 'package:declutter/core/app_assets.dart';
+import 'package:declutter/features/cart/presentation/widgets/empty_cart.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CartView extends StatelessWidget {
@@ -7,11 +9,6 @@ class CartView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Column(
-          children: [
-            SvgPicture.asset(AppAssets.emptyCart),
-          ],
-        ));
+    return const Scaffold(body: EmptyCartWidget());
   }
 }

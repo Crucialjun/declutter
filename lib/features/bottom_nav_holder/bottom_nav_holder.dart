@@ -1,4 +1,4 @@
-import 'package:declutter/features/cart/cart_view.dart';
+import 'package:declutter/features/cart/presentation/cart_view.dart';
 import 'package:declutter/features/home/home_view.dart';
 import 'package:declutter/features/profile/presentation/profile_view.dart';
 import 'package:declutter/features/search/search_view.dart';
