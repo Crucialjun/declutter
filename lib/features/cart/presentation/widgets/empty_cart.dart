@@ -18,7 +18,6 @@ class EmptyCartWidget extends StatelessWidget {
           SvgPicture.asset(
             AppAssets.emptyCart,
             height: 250.h,
-            width: double.infinity,
           ),
           Text('Whoops',
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
@@ -38,18 +37,14 @@ class EmptyCartWidget extends StatelessWidget {
                   fontWeight: FontWeight.w400)),
           SizedBox(height: 30.h),
           ElevatedButton(
-            
               onPressed: () {},
-              
               style: ElevatedButton.styleFrom(
                   foregroundColor: Theme.of(context).colorScheme.onPrimary,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4.r),
                   ),
-                  
                   backgroundColor: Theme.of(context).colorScheme.primary,
                   padding: EdgeInsets.all(20.r)),
-                
               child: Text(
                 'Shop Now',
                 style: TextStyle(
