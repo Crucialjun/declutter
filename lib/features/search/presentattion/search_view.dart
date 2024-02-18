@@ -51,9 +51,9 @@ class _SearchViewState extends State<SearchView> {
                             FocusScope.of(context).unfocus();
                           },
                           icon: const Icon(Icons.clear))),
-                          onFieldSubmitted: (value){
-                            Logger().d(value);
-                          },
+                  onFieldSubmitted: (value) {
+                    Logger().d(searchController.text);
+                  },
                 )
               ],
             ),
