@@ -1,7 +1,7 @@
 import 'package:declutter/features/cart/presentation/cart_view.dart';
 import 'package:declutter/features/home/home_view.dart';
 import 'package:declutter/features/profile/presentation/profile_view.dart';
-import 'package:declutter/features/search/search_view.dart';
+import 'package:declutter/features/search/presentattion/search_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 

@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
@@ -37,10 +38,16 @@ class AppTheme {
             ),
           ),
           useMaterial3: true,
+          inputDecorationTheme: const InputDecorationTheme(
+            filled: true,
+            contentPadding: EdgeInsets.all(10),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(8)),
+            ),
+           
+          ),
           textTheme: const TextTheme(
-            
             titleMedium: TextStyle(
-              
                 fontSize: 18,
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.normal,
