@@ -1,4 +1,4 @@
-import 'package:declutter/core/app_assets.dart';
+import 'package:declutter/constants/app_assets.dart';
 import 'package:declutter/core/bloc/main_bloc.dart';
 import 'package:declutter/features/profile/presentation/widgets/profile_list_tile.dart';
 import 'package:declutter/utils/widgets/app_name_text.dart';

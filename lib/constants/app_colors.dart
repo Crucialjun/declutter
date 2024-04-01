@@ -7,4 +7,6 @@ class AppColors {
   static const Color lightScaffoldBackgroundColor = Colors.white;
   static Color darkScaffoldBackgroundColor =
       const Color.fromARGB(255, 9, 3, 27);
+
+  
 }

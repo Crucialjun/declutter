@@ -1,4 +1,4 @@
-import 'package:declutter/core/app_assets.dart';
+import 'package:declutter/constants/app_assets.dart';
 import 'package:declutter/features/cart/presentation/widgets/cart_bottom_checkout.dart';
 import 'package:declutter/features/cart/presentation/widgets/empty_cart.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';

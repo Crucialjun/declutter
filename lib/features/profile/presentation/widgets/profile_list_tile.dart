@@ -1,4 +1,4 @@
-import 'package:declutter/core/app_assets.dart';
+import 'package:declutter/constants/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class ProfileListTile extends StatelessWidget {

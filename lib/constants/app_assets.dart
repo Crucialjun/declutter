@@ -12,4 +12,7 @@ class AppAssets {
 
   static const String emptyCart = '$_svgsPath/empty_cart.svg';
 
+  static const String banner1 = '$_pngsPath/banner1.png';
+  static const String banner2 = '$_pngsPath/banner2.png';
+
 }

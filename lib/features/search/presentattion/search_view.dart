@@ -1,4 +1,4 @@
-import 'package:declutter/core/app_assets.dart';
+import 'package:declutter/constants/app_assets.dart';
 import 'package:dynamic_height_grid_view/dynamic_height_grid_view.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
